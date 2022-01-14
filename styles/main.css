@@ -1,0 +1,48 @@
+/* import section start */
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Poppins&display=swap');
+/* import section end */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 5%;
+}
+header>nav{
+    display: flex;
+    justify-content: space-between;
+}
+/* header>nav>div{
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+} */
+header>nav>div>a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    align-items: center;
+}
+
+/* ------------------
+  top section style 
+--------------------*/
+#top-section{
+    display: flex;
+    justify-content: space-between;
+
+}
+#top-section img{
+    position: absolute;
+    /* width: 80%; */
+    /* border: 2px solid black; */
+}
+.half-width{
+    width: 35%;
+    padding: 5%;
+    align-items: center;
+}
+.button{
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 20px;
+    background-color: #E02C6D;
+    color: white;
+}
