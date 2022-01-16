@@ -3,41 +3,20 @@
 /* import section end */
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0 5%;
+    max-width: 100%;
 }
-header>nav{
-    display: flex;
-    justify-content: space-between;
-}
-/* header>nav>div{
-    align-items: center;
-    text-align: center;
-    border: 2px solid black;
-} */
-header>nav>div>a{
-    text-decoration: none;
-    color: black;
-    margin-left: 20px;
-    align-items: center;
+section{
+    margin-bottom: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* ------------------
   top section style 
 --------------------*/
 #top-section{
-    display: flex;
-    justify-content: space-between;
-
-}
-#top-section img{
-    position: absolute;
-    /* width: 80%; */
-    /* border: 2px solid black; */
-}
-.half-width{
-    width: 35%;
-    padding: 5%;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .button{
     text-decoration: none;
@@ -45,4 +24,144 @@ header>nav>div>a{
     border-radius: 20px;
     background-color: #E02C6D;
     color: white;
+}
+/* -----------------------
+    ecomarce section
+    ---------------------- */
+.ecomarces{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    padding-top: 20px;
+}
+.ecomarces .ecomarce img{
+    align-items: center;
+}
+/* ----------------------
+    products section
+    --------------------- */
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product{
+    box-shadow: gray 10px 10px 20px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.product img{
+    align-items: center;
+    width: 100%;
+}
+.checked {
+    color: orange;
+}
+.ra-number{
+    margin-left: 10px;
+}
+.button-2 a{
+    color: #E02C6D;
+    text-decoration: none;
+}
+.button-2{
+    padding: 5px;
+}
+main .button-2{
+    text-align: right;
+}
+
+.button-3{
+    text-decoration: none;
+    padding: 5px 30px;
+    background-color: #E02C6D;
+    color: white;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.review{
+    margin: 20px;
+}
+
+
+footer{
+    color: white;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sm-icon{
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:767px) {
+    body{
+        max-width: 100%;
+    }
+    header>h1{
+        text-align: center;
+    }
+    #top-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+    }
+    
+    .half-width>img{
+        width: 90%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* border: 1px solid red; */
+    }
+    .video-review{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .ecomarces{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 10px;
+        border-top: 1px solid darkgray;
+        border-bottom: 1px solid darkgray;
+        /* padding: 10px 3px; */
+    }
+    .ecomarce>img{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    body{
+        max-width: 100%;
+    }
+    #top-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .half-width>img{
+        width: 90%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* border: 1px solid red; */
+    }
+    
 }
