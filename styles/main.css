@@ -99,12 +99,10 @@ footer{
     margin-right: 10px;
 }
 
-@media only screen and (max-width:767px) {
-    body{
-        max-width: 100%;
-    }
+@media only screen and (max-width:768px) {
     header>h1{
         text-align: center;
+        letter-spacing: 1.75px;
     }
     #top-section{
         display: grid;
